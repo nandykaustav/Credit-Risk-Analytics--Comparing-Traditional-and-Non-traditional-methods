@@ -4,7 +4,7 @@ methods**
 KAUSTAV NANDY
 
 This project presents a comprehensive solution that employs two distinct
-approaches: **the traditional Logistic Regression mode**l and an
+approaches: **the traditional Logistic Regression model** and an
 **alternative approach utilizing the Random Forest algorithm**. The goal
 is accurate prediction of defaults, and studying the relative efficacy
 of non-traditional methods for this task. This document outlines the key
@@ -33,9 +33,9 @@ interpretability and mitigates the influence of outliers. The
 mathematical formula of WoE and IV is as follows ('Bads' mean defaults
 and 'Goods' mean non-defaults):
 
-> ![](./image2.png){width="2.811777121609799in"
-> height="0.4502241907261592in"}![](./image2.png){width="3.0520833333333335in"
-> height="0.3466513560804899in"}
+WOE = In(% of non-events ➗ % of events)
+
+IV = ∑ (% of non-events - % of events) * WOE
 
 -   The initial step involved the selection of features based on their
     Information Value (IV) scores, enabling the model to focus on the
@@ -46,8 +46,7 @@ and 'Goods' mean non-defaults):
     then tweaked and merged until a monotonic relationship is
     established with the target variable.
 
-**Modeling and Evaluation\
-**
+**Modeling and Evaluation**
 
 Utilizing the preprocessed dataset (done using scikit-learn pipelines),
 a Logistic Regression model was constructed. Evaluation encompassed a
